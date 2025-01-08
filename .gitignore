@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+
+# Логи
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Персональные конфигурации IDE
+.vscode/
+.idea/
+
+# .env файлы
+.env
+
+# Файлы сборки
+build/
+dist/
+
+# Другие чувствительные файлы
+.env.local
+.env.development
+.env.production
