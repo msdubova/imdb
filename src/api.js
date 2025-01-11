@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
-const BASE_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 // Функция для получения данных с использованием axios
 const fetchMovies = async (endpoint) => {
-  const response = await axios.get(`${BASE_URL}/${endpoint}`, {
+  const response = await axios.get(`${API_URL}/${endpoint}`, {
     params: {
       api_key: API_KEY,
       language: "en-US",
@@ -16,7 +16,7 @@ const fetchMovies = async (endpoint) => {
 };
 
 export const getMovieDetails = async (movieId) => {
-  const response = await axios.get(`${BASE_URL}/movie/${movieId}`, {
+  const response = await axios.get(`${API_URL}/movie/${movieId}`, {
     params: {
       api_key: API_KEY,
       language: "en-US",
